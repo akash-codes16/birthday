@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Surprise</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #3a0066, #ad00ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+
+  .container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px #ff00ff;
+    animation: pulse 2s infinite alternate;
+  }
+
+  @keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+  }
+
+  .start-btn {
+    margin-top: 40px;
+    padding: 18px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff00ff, #8a00ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ff00ff;
+    transition: 0.3s;
+  }
+
+  .start-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff00ff;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🌟 This is for my Love my SONPAPDII  🌟</h1>
+    <h3>🌟 आपला हा ५ वर्षांचा प्रवास… शब्दांत मावेल इतका छोटा कधीच नव्हता.
+तरीही न बोलता, आपल्या एकत्र घालवलेल्या क्षणांचे काही निवडक फोटो तुला दाखवत आहे… कारण प्रत्येक क्षणात आपली एक छोटीशी दुनिया दडलेली होती.
+
+आज तुझ्या वाढदिवसाच्या या खास दिवशी, देवाच्या चरणी एकच प्रार्थना—
+तुझ्या आयुष्यात तुला ते सगळं मिळो, जे तुझ्यासाठी सुंदर आहे, पवित्र आहे, आणि तुला खऱ्या अर्थाने आनंद देणारं आहे.
+
+आणि शेवटी…
+माझं तुझ्यावरचं प्रेम शब्दांपेक्षा खूप जास्त आहे.
+I love you.  🌟</h3>
+    <button class="start-btn" onclick="startSurprise()">Click to Begin 💜</button>
+  </div>
+
+<script>
+  function startSurprise() {
+    window.location.href = "birthday.html"; // second page opens
+  }
+</script>
+
+</body>
+</html>
